@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Jardim ICS4U-2</title>
+    <style> /*Create a style tag*/
+    /*Call the body tag and set a background colour*/
+        body{ 
+            background-color: lightcyan;
+        }
+        /*Call the h1 tag*/
+        /*Set the font of the h1 tag to be 1.5x larger*/
+        /*Set the h1 tag to be justified so we can determine the left and top margins*/
+        /*Set the font family to be Segoe UI*/
+        h1 {
+            font-size: 150%;
+            text-align: justify;
+            margin-left: 650px;
+            margin-top: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        /*Call the h2 tag*/
+        /*Call same as above, justify text and set margins, same font family*/
+        h2 {
+            font-size: 100%;
+            text-align: justify;
+            margin-left: 650px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /*Call the container class */
+        /*Set the display to flex so we can use flexbox layouts*/
+        /*Align the container and set it to flex start, this allows us to use cross axis for styling*/
+        /*Justify the content so it is based at the middle of the web page */
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 50px;
+            margin-left: 495px;
+        }
+        /*Call the about me class*/
+        /*Set it's font to be 1:1*/
+        /*Set a max width, this makes it so the text fits nicley in a self determined box (ie 100px by 100 px box) */
+        /*Justify the text and set margins, set the font family*/
+        .about-me {
+            font-size: 100%;
+            max-width: 450px;
+            text-align: justify;
+            margin-left: -245px;
+            margin-top: -60px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /*Call the button class*/
+        /*Set the position of the button to relative, this lets the user deternmine the exact pixal the button will be at (not good form/practices sorry Ms.Richards)*/
+        /*Set it to be 665px from the left side of the screen, set a margin from the top */
+        .button {
+            position: relative;
+            left: 655px;
+            margin-top: 25px;
+        }
+        /*Call the button tag and the button class */
+        /*Set the padding of the button and also the font size. Give the button a blue background colour*/
+        /*Make it so when you hover over the button, you get a cursor indicating a link*/
+        /*Set a transition, and make it take 0.3seconds. This will be the time it takes to change colours upon hovering the button */
+        .button button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3f92ff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        /*Call the button tag and button class. (I do not know what the "hover" thing is called, I know what it does though :D. Sorry Ms Richards) */
+        /*Set a transformation for the button. Make it scale/grow by 1.05x */
+        .button button:hover {
+            background-color: #02d1ff;
+            transform: scale(1.05);
+        }
+        
+        /*Call the frank-image class and the img tag */
+        /*Set the position to absolute (bad practice, im sorry), and define its pixal position to be the top left corner */
+        /*Set a size for the image, and set the height to auto. This will base the height on the size of the width */
+        .frank-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 600px;
+            height: auto;
+        }
+        /*Call the contact-info class */
+        /*Set the font size, and do the exact same as the h1 tag */
+        .contact-info {
+            font-size: 100%;
+            text-align: justify;
+            margin-left: 650px;
+            margin-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /*Call the container-logos class */
+        /*Set the display to flex so we can use flexbox layout, and align the items to flex start, this aligns the items to the start of the flex box */
+        /*Justify the content and set the margins */
+        .container-logos {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 715px;
+            margin-top: 50px;
+        }
+        /*Call the contact-logos class and the img tag */
+        /*CSet the position to relative so we can deternmine exact location (bad practice sorry)
+        Set the margins, width and height
+        */
+        .contact-logos img {
+            position: relative;
+            top: -25px;
+            left: -735px;
+            width: 50px;
+            height: auto;
+            margin-left: 10px;
+        } 
+        /*Define a media query that targets screens with a max width of 1200px
+        This will apply to h1,h2, the container class, the about-me class, the button class, the contact-info class and the container-logos class
+        Target screen with a max width of 1200px, this will remove any left margin and align everything to the right
+        */
+        @media screen and (max-width: 1200px) {
+            h1,
+            h2,
+            .container,
+            .about-me,
+            .button,
+            .contact-info,
+            .container-logos {
+                margin-left: 10px;
+                text-align: right;
+            }
+            /*Set the position to relative to make the image smaller since it will be based on it's "normal" position
+            Define the width and heihgt
+            */
+            .frank-image img {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+            /*Call the button class and set the alignment to be to the right, also add a right side margin */
+            .button {
+                text-align: right;
+                margin-top: 25px;
+            }       
+        }
+        
+    </style> 
+</head> 
+
+<!-- Start of body tag -->
+<body>
+
+    <header>
+        <!-- Header section -->
+        class="header.container"><!-- Header section -->
+        <h1>Frank Jardim</h1> <!-- Define the h1 and h2 tag -->
+        <h2>Robotics Student, Entrepreneur and Future Clown</h2>
+    </header><!-- End of header tag -->
+
+    <main> <!-- Start of main -->
+        <div class="container"> <!-- define a class and call it container, this will be used for CSS, and to make a responsive website -->
+            <div class="frank-image"> <!-- Define a call called frank-image and post a discord link for a img, also include discriptive alt text -->
+                <img src="https://media.discordapp.net/attachments/556602224051093549/1209998774630350870/IMG_1072.jpg?ex=65e8f62c&is=65d6812c&hm=4757c33db628814c5cf0fbaf2cf1ae0a8ca374464b4d22611ec739b065b675ca&=&format=webp&width=502&height=670"
+                    alt="A picture Frank took while in Brazil">
+            </div>
+
+                <div class="about-me"><!-- Define class called about me -->
+                    <p> <!-- Creat a paragraph, this is my about me section -->
+                        Hey there! I'm Frank Jardim, a 17-year-old student at Western Technical Commercial School in Toronto. 
+                        While I thrive in the world of robotics with the WARP7 team, my greatest joys come from nature and sports.
+                        Whether I'm hiking through forests, swimming in lakes, or playing soccer with friends, nature and sports provide me with a sense of peace and excitement. 
+                        Sports, in particular, teach me valuable lessons in teamwork and resilience, shaping me into a better athlete and individual. Outside of these passions, I hold dear the connections I share with family and friends, cherishing moments spent together and creating lasting memories. 
+                        And when it's time to unwind, I escape into the world of video games for entertainment and relaxation. 
+                        My life is a colorful blend of nature, sports, family, and fun, each aspect contributing to the richness of my experiences and shaping who I am. As for what I want to be when I am older,
+                        I am not sure yet. I was leaning towards engineering at first but now I have flip-flopped back to computer science. Either way, does not matter to me as long as 
+                        I get to visit family :D
+                    </p>
+                </div>
+        </div>
+        <div class="button"> <!-- Create a class called button, this will be used to link my projects while also making the website look better -->
+            <a href="/projects.html"><!-- Create a new html file called projects in the root directory, create a button with a hotlink -->
+                <button>Read About Some of My Projects!</button><!-- Add text to the button -->
+            </a>
+        </div>
+    </main><!-- End of main -->
+    <footer class="contact-info"> <!-- Create a footer class -->
+        <p>Contact Information (2024-02-23)</p> <!-- Small header with the date  -->
+        <div class="container-logos"> <!-- Create a container for the footer logos, this will be used for CSS later -->
+            <div class="contact-logos"> <!-- Create a class called contact logos, create links with images that will go to github and outlook -->
+                <a href="https://github.com/Frank-J1">
+                    <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="link to Frank's github">
+                </a>
+                <a href="mailto:frank.jardim@student.tdsb.on.ca">
+                    <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="link to email frank">
+                </a>
+            </div>
+        </div>  
+        
+    </footer> <!-- end of footer -->
+</body> <!-- end of code -->
+</html>

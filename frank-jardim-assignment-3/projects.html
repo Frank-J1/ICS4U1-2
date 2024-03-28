@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank's Project Gallery</title>
+
+    <style>
+        body {
+            /*Call the body tag, set a fony family and the margin to 0 and padding to 0. This removes any margin/padding. Set a background color*/
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header { /*Call the header tag and define a color for the background and for the text
+            Align the text in the middle*/
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        /*Call the container class and set a max width and a margin/padding*/
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /*Align the first emoji and project in a row, set a gap of 25x from each other and create*/
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+        /*Set a radius for the images so they look nice
+        set the heigh to auto and define a max width*/
+        .row img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+
+        }
+
+        /*Set the font of the paragraph to be 18px and for it to be a dark grey color, and define an line hight of 1.6 so the spacing looks good */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        /*Make the website responsive, create a media query and define the max width to be 1200px
+        create a flexbox layout*/
+        @media screen and (max-width: 1200px) {
+            .row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frank's Project Gallery</h1><!-- define a h1-->
+</header>
+
+<div class="container"><!-- create a container for algit pushl of the images -->
+    <div class="row"><!-- FIrst pair of emoji/project-->
+        <div>
+            <img src="https://media.discordapp.net/attachments/317358785846837258/1210059438266785842/IMG_2894.jpg?ex=65e92eab&is=65d6b9ab&hm=67538c080e899a27c1cd28c7c11d157a58a571f9583c1ee296896483adf47a24&=&format=webp&width=502&height=670"
+                 alt="image of the WARP7 2024 robot"><!-- Define a descriptive alt text -->
+        </div>
+
+        <div> <!-- Same as above -->
+            <img src="https://1000logos.net/wp-content/uploads/2023/05/Laughing-Emoji.png"
+                 alt="laughing emoji laughing at the 2024 WARP7 robot" class="emoji">
+        </div>
+    </div>
+
+    <div class="row"><!-- Same as above -->
+        <div>
+            <img src="https://media.discordapp.net/attachments/317360293510512640/1100560850064003082/A46B8205-D722-4B44-8E3A-86EF871DE7BB.jpg?ex=65e7a7aa&is=65d532aa&hm=a3a8d102a6880f51fc9a56f326fe41ec4ac297debc1353e9be57b192a178dd03&=&format=webp&width=1005&height=670"
+                 alt="image of the WARP7 2023 robot">
+        </div>
+        <div>
+            <img src="https://www.shutterstock.com/image-vector/emoticon-looking-up-raising-hands-260nw-444822673.jpg"
+                 alt="" class="emoji">
+        </div>
+    </div>
+
+    <div class="row"><!-- Same as above -->
+        <div>
+            <img src="https://how2electronics.com/wp-content/uploads/2019/05/RFID-RC522-Attendance-System-Arduino.jpg"
+                 alt="arduino project for Mr.Wangs' Computer Engineering Course">
+        </div>
+        <div>
+            <img src="https://cdn.vectorstock.com/i/preview-1x/59/79/cartoon-bomb-character-with-bewildered-expression-vector-48025979.jpg"
+                 alt="Bomb Emoji representing the apperance of the arduino project"><!-- Same as above -->
+        </div>
+    </div>
+
+    <div><!-- Creat a div so we can inclue a discription of the images -->
+        <p>Hey, this part of the website is less serious and is just meant to show some of the projects that I have done.
+            The first image is an image of the current WARP7 robot for 2024. It is being built and will hopefully be a
+            great robot. The second image is another picture of a WARP7 robot but this time it is from 2023. And lastly,
+            we have a project that I did for Mr. Wang's Computer Engineering Class. All of these projects were for the most part fun, 
+            and I learned so much from all of them. From robotics, I gained valuable CAD skills, from the arduino project I learned that
+            arduino is miserable but very fun at the same time! Overall, a very fun time!
+        </p>
+    </div>
+</div>
+
+</body><!-- End of code-->
+</html>

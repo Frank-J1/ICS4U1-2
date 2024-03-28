@@ -1,0 +1,61 @@
+// FRANK JARDIM
+// ICS4U-2
+//PSEUDOCODE FOR MR.WANG RESPONSE CHECKER
+
+BEGIN
+
+OUTPUT: 
+    Welcome to Mr.Wangs room
+
+INPUT: OBTAIN
+    Is Mr.Wang here? (Y/N)
+        IF (N) terminate (end code)
+
+        ELSE
+            OUTPUT: 
+            What question would you like to ask? (1-3)
+            1. How was your day
+            2. What are you doing tommorrow
+            3. Am I your favorite student?
+
+OUTPUT:
+    Did Mr.Wang hear the question (Y/N)?
+        IF (N)
+            OUTPUT:
+                Would you like to re-ask the question? (Y/N)
+                IF (N) terminate (end code)
+                
+                ELSE 
+                    OUTPUT: 
+                    What question would you like to ask? (1-3)
+                     1. How was your day
+                     2. What are you doing tommorrow
+                     3. Am I your favorite student?
+
+OUTPUT:
+    Does Mr.Wang Have a smile (Y/N)?
+        IF (N)
+            RANDOM_INT =((int) (3 * Math.random()) + 1)
+            IF RANDOM_INT = 1
+                OUTPUT:
+                    Mr.Wang will respond with a shrug, we will not make eye contact
+
+            IF RANDOM_INT = 2
+                OUTPUT:
+                    Mr.Wang will look at you with a confused look, he will proces to ask the question "What?"
+
+            IF RANDOM_INT = 3
+                OUTPUT:
+                    MR.Wang will respond with a "maybe" or a "I don't know"
+
+            OUTPUT:
+                Are you happy with the response(Y/N)?
+
+                IF(Y)
+                    end code
+                ELSE
+                    repeat code from "do you want to reask the question"
+
+END OF CODE
+
+
