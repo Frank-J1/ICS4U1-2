@@ -44,6 +44,31 @@
             border-radius: 8px;
 
         }
+        .button {
+            position: relative;
+            left: 10px;
+            margin-top: 25px;
+        }
+        /*Call the button tag and the button class */
+        /*Set the padding of the button and also the font size. Give the button a blue background colour*/
+        /*Make it so when you hover over the button, you get a cursor indicating a link*/
+        /*Set a transition, and make it take 0.3seconds. This will be the time it takes to change colours upon hovering the button */
+        .button button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3f92ff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        /*Call the button tag and button class. (I do not know what the "hover" thing is called, I know what it does though :D. Sorry Ms Richards) */
+        /*Set a transformation for the button. Make it scale/grow by 1.05x */
+        .button button:hover {
+            background-color: #02d1ff;
+            transform: scale(1.05);
+        }
 
         /*Set the font of the paragraph to be 18px and for it to be a dark grey color, and define an line hight of 1.6 so the spacing looks good */
         p {
@@ -70,7 +95,7 @@
 <div class="container"><!-- create a container for algit pushl of the images -->
     <div class="row"><!-- FIrst pair of emoji/project-->
         <div>
-            <img src="https://media.discordapp.net/attachments/317358785846837258/1210059438266785842/IMG_2894.jpg?ex=65e92eab&is=65d6b9ab&hm=67538c080e899a27c1cd28c7c11d157a58a571f9583c1ee296896483adf47a24&=&format=webp&width=502&height=670"
+            <img src="https://cdn.discordapp.com/attachments/556602224051093549/1252116047385854013/image.png?ex=66710b70&is=666fb9f0&hm=9051a48d17e8ac11b4a84d198b709b668d4c1a8a3f33e9303e8487f6efa082f6&"
                  alt="image of the WARP7 2024 robot"><!-- Define a descriptive alt text -->
         </div>
 
@@ -82,7 +107,7 @@
 
     <div class="row"><!-- Same as above -->
         <div>
-            <img src="https://media.discordapp.net/attachments/317360293510512640/1100560850064003082/A46B8205-D722-4B44-8E3A-86EF871DE7BB.jpg?ex=65e7a7aa&is=65d532aa&hm=a3a8d102a6880f51fc9a56f326fe41ec4ac297debc1353e9be57b192a178dd03&=&format=webp&width=1005&height=670"
+            <img src="https://cdn.discordapp.com/attachments/556602224051093549/1252115852380213248/image.png?ex=66710b42&is=666fb9c2&hm=af638516d3ae8b0247467be93b5a57df4a1aa4542bdb230788b063f8b1f785d0&"
                  alt="image of the WARP7 2023 robot">
         </div>
         <div>
@@ -100,6 +125,12 @@
             <img src="https://cdn.vectorstock.com/i/preview-1x/59/79/cartoon-bomb-character-with-bewildered-expression-vector-48025979.jpg"
                  alt="Bomb Emoji representing the apperance of the arduino project"><!-- Same as above -->
         </div>
+    </div>
+
+    <div class="button"> <!-- Create a class called button, this will be used to link my projects while also making the website look better -->
+        <a href="http://localhost:3000"><!-- Create a new html file called projects in the root directory, create a button with a hotlink -->
+            <button>Click Here to Run A Really Cool App :D</button><!-- Add text to the button -->
+        </a>
     </div>
 
     <div><!-- Creat a div so we can inclue a discription of the images -->
